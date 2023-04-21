@@ -15,8 +15,22 @@
 </head>
 
 <body>
+    <label for="selectFolder">Choose Folder for Deployment: </label>
+    <input type="file" id="selectFolder" name="selectFolder" webkitdirectory>
+
+    <div>
+        <label for="projectName">Name your project:</label>
+        <input type="text" id="projectName" name="projectName">
+    </div>
+
+    <div>
+        <label for="authToken">Authorization Token:</label>
+        <input type="text" id="authToken" name="authToken">
+    </div>
+
     <button id="deployButton">Deploy</button>
 
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
     <script src=" app.js"></script>
 </body>
 

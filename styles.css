@@ -1,18 +1,21 @@
 body {
     background-color: #1f1b29;
-    display: flex;
+    font-family: 'Roboto', sans-serif;
+    /* display: flex;
     align-items: center;
     justify-content: center;
-    height: 100vh;
+    height: 100vh; */
 }
 
 button {
+    display: block;
     font-family: 'Roboto', sans-serif;
     background: none;
     color: #ffa260;
     border: 2px solid;
     padding: 1rem 2rem;
     font-size: 1.4rem;
+    margin: 1rem;
 
     transition: transform 0.15s, color 0.15s, border-color 0.15s, box-shadow 0.15s;
 }
@@ -31,4 +34,54 @@ button:active {
     border-color: #adb5bd;
     box-shadow: 0 0.5em 0.5em -0.4em white;
     transition: border-color 0s, box-shadow 0s;
+}
+
+label {
+    color: white;
+    font-size: 1.5rem;
+    margin: 1rem;
+}
+
+input {
+    font-family: 'Roboto', sans-serif;
+    color: black;
+    font-size: 1.3rem;
+    margin: 1rem;
+    outline: none;
+}
+
+input:focus {
+    border: 3px solid chocolate;
+}
+
+#selectFolder {
+    border: 1px solid #666666;
+}
+
+#selectFolder:hover {
+    cursor: pointer;
+}
+
+/* JS Classes */
+.disabled {
+    color: #666666;
+}
+
+.disabled:hover {
+    border-color: #666666;
+    color: #666666;
+    box-shadow: none;
+    transform: none;
+}
+
+
+.disabled:active {
+    border-color: #666666;
+    box-shadow: none;
+    transition: none;
+    cursor: not-allowed;
+}
+
+.notFilled {
+    border: 3px solid red;
 }
