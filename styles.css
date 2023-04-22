@@ -8,14 +8,13 @@ body {
 }
 
 button {
-    display: block;
     font-family: 'Roboto', sans-serif;
     background: none;
     color: #ffa260;
     border: 2px solid;
     padding: 1rem 2rem;
     font-size: 1.4rem;
-    margin: 1rem;
+    margin: 1.5rem;
 
     transition: transform 0.15s, color 0.15s, border-color 0.15s, box-shadow 0.15s;
 }
@@ -26,7 +25,7 @@ button:hover {
 
     box-shadow: 0 0.5em 0.5em -0.4em #f1ff5c;
 
-    transform: translateY(-0.15em) scale(105%, 105%);
+    transform: translateY(-0.15em) scale(100%, 100%);
     cursor: pointer;
 }
 
@@ -39,19 +38,35 @@ button:active {
 label {
     color: white;
     font-size: 1.5rem;
-    margin: 1rem;
+    margin: 2rem 0;
 }
 
 input {
     font-family: 'Roboto', sans-serif;
     color: black;
     font-size: 1.3rem;
-    margin: 1rem;
+    margin: 2rem 0;
     outline: none;
 }
 
 input:focus {
-    border: 3px solid chocolate;
+    border: 3px solid #606c38;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+.custom-file-upload {
+    /* background-color: #edede9; */
+    /* color: blue; */
+    border: 1px solid #ccc;
+    display: inline-block;
+    padding: 0.4rem 0.75rem;
+    cursor: pointer;
+    background: #ED213A;
+    background: -webkit-linear-gradient(to right, #93291E, #ED213A);
+    background: linear-gradient(to right, #93291E, #ED213A);
 }
 
 #selectFolder {
@@ -72,6 +87,7 @@ input:focus {
     color: #666666;
     box-shadow: none;
     transform: none;
+    cursor: default;
 }
 
 
