@@ -154,6 +154,9 @@ deployButton.addEventListener("click", async () => {
             alert(`'${projectNameInput.value}' has been successfully deployed on Vercel!`)
             reset();
         }
+        else {
+
+        }
     }
     catch (err) {
         console.error(err);
